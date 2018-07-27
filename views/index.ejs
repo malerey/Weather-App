@@ -13,7 +13,12 @@
           <input name="city" type="text" class="ghost-input" placeholder="Escribí el nombre de una ciudad" required>
           <input type="submit" class="ghost-button" value="¡Decime el clima!">
         </form>
-
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
       </fieldset>
     </div>
   </body>
